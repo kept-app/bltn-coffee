@@ -44,18 +44,10 @@ export default function MenuPage() {
             Instagram, or come by and we will walk you through it.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-            
-              href="https://instagram.com/bltncoffee.hk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-ink-900 text-sand-50 px-6 py-3 hover:bg-accent-brick transition-colors"
-            >
+            <a href="https://instagram.com/bltncoffee.hk" target="_blank" rel="noopener noreferrer" className="rounded-full bg-ink-900 text-sand-50 px-6 py-3 hover:bg-accent-brick transition-colors">
               see the menu on instagram
             </a>
-            <Link
-              href="/visit"
-              className="rounded-full border border-ink-900/15 px-6 py-3 text-ink-900 hover:border-ink-900/40 transition-colors"
-            >
+            <Link href="/visit" className="rounded-full border border-ink-900/15 px-6 py-3 text-ink-900 hover:border-ink-900/40 transition-colors">
               how to get here
             </Link>
           </div>
