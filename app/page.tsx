@@ -19,18 +19,10 @@ export default function HomePage() {
             all-day breakfast, a few outdoor tables for you and the dog.
           </p>
           <div className="mt-8 flex items-center justify-center gap-3 text-sm">
-            <Link
-              href="/visit"
-              className="rounded-full bg-ink-900 text-sand-50 px-6 py-3 hover:bg-accent-brick transition-colors"
-            >
+            <Link href="/visit" className="rounded-full bg-ink-900 text-sand-50 px-6 py-3 hover:bg-accent-brick transition-colors">
               find us
             </Link>
-            
-              href="https://instagram.com/bltncoffee.hk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-ink-900/15 px-6 py-3 text-ink-900 hover:border-ink-900/40 transition-colors"
-            >
+            <a href="https://instagram.com/bltncoffee.hk" target="_blank" rel="noopener noreferrer" className="rounded-full border border-ink-900/15 px-6 py-3 text-ink-900 hover:border-ink-900/40 transition-colors">
               follow on instagram
             </a>
           </div>
@@ -63,24 +55,9 @@ export default function HomePage() {
       {/* THREE SHORT SECTIONS */}
       <section className="px-5 py-20 sm:py-28">
         <div className="mx-auto max-w-5xl grid gap-6 md:grid-cols-3">
-          <Card
-            tilt="-rotate-1"
-            kicker="the room"
-            title="A small bar, low-key inside"
-            body="Limited indoor seating with a colour-coordinated interior, plus outdoor tables that fit a few more. It fills up fast on weekends, so mornings are easiest."
-          />
-          <Card
-            tilt="rotate-1"
-            kicker="what we serve"
-            title="Coffee and all-day breakfast"
-            body="Espresso drinks, a few non-coffee options, croissants and croffles, and a short list of breakfast plates available all day. Specials rotate."
-          />
-          <Card
-            tilt="-rotate-1"
-            kicker="bring the dog"
-            title="Pet-friendly seats outside"
-            body="The outdoor seating welcomes dogs, which is genuinely rare for this part of Causeway Bay."
-          />
+          <Card tilt="-rotate-1" kicker="the room" title="A small bar, low-key inside" body="Limited indoor seating with a colour-coordinated interior, plus outdoor tables that fit a few more. It fills up fast on weekends, so mornings are easiest." />
+          <Card tilt="rotate-1" kicker="what we serve" title="Coffee and all-day breakfast" body="Espresso drinks, a few non-coffee options, croissants and croffles, and a short list of breakfast plates available all day. Specials rotate." />
+          <Card tilt="-rotate-1" kicker="bring the dog" title="Pet-friendly seats outside" body="The outdoor seating welcomes dogs, which is genuinely rare for this part of Causeway Bay." />
         </div>
       </section>
 
@@ -92,12 +69,7 @@ export default function HomePage() {
             <span className="italic-display text-accent-brick"> Instagram</span> is
             where it lives.
           </p>
-          
-            href="https://instagram.com/bltncoffee.hk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-block text-sm underline decoration-sand-300 decoration-2 underline-offset-[6px] hover:decoration-accent-brick"
-          >
+          <a href="https://instagram.com/bltncoffee.hk" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block text-sm underline decoration-sand-300 decoration-2 underline-offset-[6px] hover:decoration-accent-brick">
             @bltncoffee.hk
           </a>
         </div>
@@ -106,21 +78,9 @@ export default function HomePage() {
   );
 }
 
-function Card({
-  kicker,
-  title,
-  body,
-  tilt,
-}: {
-  kicker: string;
-  title: string;
-  body: string;
-  tilt: string;
-}) {
+function Card({ kicker, title, body, tilt }: { kicker: string; title: string; body: string; tilt: string; }) {
   return (
-    <article
-      className={`bg-sand-50 rounded-2xl border border-sand-200/70 shadow-card p-6 sm:p-7 transform ${tilt} hover:rotate-0 transition-transform duration-500`}
-    >
+    <article className={`bg-sand-50 rounded-2xl border border-sand-200/70 shadow-card p-6 sm:p-7 transform ${tilt} hover:rotate-0 transition-transform duration-500`}>
       <p className="text-xs uppercase tracking-[0.18em] text-accent-brick">{kicker}</p>
       <h3 className="mt-3 font-display text-xl text-ink-900 leading-snug">{title}</h3>
       <p className="mt-3 text-ink-700 leading-relaxed">{body}</p>
