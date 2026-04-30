@@ -6,12 +6,12 @@ export default function HomePage() {
       {/* HERO */}
       <section className="px-5 pt-16 pb-14 sm:pt-24 sm:pb-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs uppercase tracking-[0.22em] text-accent-terracotta">
+          <p className="text-xs uppercase tracking-[0.22em] text-accent-brick">
             Causeway Bay, Hong Kong
           </p>
-          <h1 className="mt-5 font-display text-5xl sm:text-7xl leading-[1.05] text-ink-900">
+          <h1 className="mt-5 font-display font-medium text-5xl sm:text-7xl leading-[1.05] text-ink-900">
             Better
-            <span className="italic-wonk text-accent-terracotta"> Late </span>
+            <span className="italic-display text-accent-brick"> Late </span>
             Than Never
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-ink-700 max-w-xl mx-auto">
@@ -21,11 +21,11 @@ export default function HomePage() {
           <div className="mt-8 flex items-center justify-center gap-3 text-sm">
             <Link
               href="/visit"
-              className="rounded-full bg-ink-900 text-cream-50 px-6 py-3 hover:bg-accent-terracotta transition-colors"
+              className="rounded-full bg-ink-900 text-sand-50 px-6 py-3 hover:bg-accent-brick transition-colors"
             >
               find us
             </Link>
-            <a
+            
               href="https://instagram.com/bltncoffee.hk"
               target="_blank"
               rel="noopener noreferrer"
@@ -35,14 +35,14 @@ export default function HomePage() {
             </a>
           </div>
           <div className="mt-12 flex justify-center">
-            <span className="squiggle" aria-hidden />
+            <span className="squiggle" aria-hidden></span>
           </div>
         </div>
       </section>
 
       {/* INFO STRIP */}
       <section className="px-5">
-        <div className="mx-auto max-w-4xl rounded-2xl bg-cream-100 shadow-soft border border-cream-200/60 grid gap-6 sm:grid-cols-3 p-6 sm:p-8 text-center sm:text-left">
+        <div className="mx-auto max-w-4xl rounded-2xl bg-sand-100 shadow-soft border border-sand-200/60 grid gap-6 sm:grid-cols-3 p-6 sm:p-8 text-center sm:text-left">
           <div>
             <p className="text-xs uppercase tracking-[0.18em] text-ink-500">hours</p>
             <p className="mt-2 font-display text-xl text-ink-900">Daily, 10am to 7pm</p>
@@ -89,14 +89,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-display text-2xl sm:text-3xl text-ink-900 leading-snug">
             For what is pouring this week and the latest from the kitchen,
-            <span className="italic-wonk text-accent-terracotta"> Instagram</span> is
+            <span className="italic-display text-accent-brick"> Instagram</span> is
             where it lives.
           </p>
-          <a
+          
             href="https://instagram.com/bltncoffee.hk"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block text-sm underline decoration-cream-300 decoration-2 underline-offset-[6px] hover:decoration-accent-terracotta"
+            className="mt-6 inline-block text-sm underline decoration-sand-300 decoration-2 underline-offset-[6px] hover:decoration-accent-brick"
           >
             @bltncoffee.hk
           </a>
@@ -119,9 +119,9 @@ function Card({
 }) {
   return (
     <article
-      className={`bg-cream-50 rounded-2xl border border-cream-200/70 shadow-card p-6 sm:p-7 transform ${tilt} hover:rotate-0 transition-transform duration-500`}
+      className={`bg-sand-50 rounded-2xl border border-sand-200/70 shadow-card p-6 sm:p-7 transform ${tilt} hover:rotate-0 transition-transform duration-500`}
     >
-      <p className="text-xs uppercase tracking-[0.18em] text-accent-terracotta">{kicker}</p>
+      <p className="text-xs uppercase tracking-[0.18em] text-accent-brick">{kicker}</p>
       <h3 className="mt-3 font-display text-xl text-ink-900 leading-snug">{title}</h3>
       <p className="mt-3 text-ink-700 leading-relaxed">{body}</p>
     </article>

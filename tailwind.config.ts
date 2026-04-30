@@ -8,31 +8,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // warm cream palette, no stark white, no pure black
-        cream: {
-          50: "#fbf7f0",
-          100: "#f7f0e3",
-          200: "#ede1c9",
-          300: "#e0cea8",
+        // sand + deep brown + brick red
+        sand: {
+          50: "#f5efe4",
+          100: "#ede4d2",
+          200: "#dccfb4",
+          300: "#c8b894",
         },
         ink: {
-          900: "#2a221b", // primary text, warm charcoal
-          700: "#544237",
-          500: "#7a6655",
+          900: "#3a2418", // deep brown, primary text
+          700: "#5c3d2e",
+          500: "#8a6f5c",
         },
         accent: {
-          terracotta: "#c4623f",
+          brick: "#a8412a",
+          brickDark: "#8a3422",
           olive: "#6b6840",
-          sky: "#7a9bb0",
         },
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
-        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-newsreader)", "serif"],
+        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 1px 2px rgba(42,34,27,0.04), 0 8px 24px rgba(42,34,27,0.06)",
-        card: "0 2px 4px rgba(42,34,27,0.05), 0 16px 40px rgba(42,34,27,0.08)",
+        soft: "0 1px 2px rgba(58,36,24,0.05), 0 8px 24px rgba(58,36,24,0.08)",
+        card: "0 2px 4px rgba(58,36,24,0.06), 0 16px 40px rgba(58,36,24,0.10)",
       },
     },
   },
