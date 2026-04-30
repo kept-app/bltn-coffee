@@ -60,12 +60,7 @@ export default function VisitPage() {
       </div>
 
       <div className="mx-auto max-w-3xl mt-10 text-center">
-        
-          href={mapsHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block rounded-full bg-ink-900 text-sand-50 px-7 py-3 text-sm hover:bg-accent-brick transition-colors"
-        >
+        <a href={mapsHref} target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-ink-900 text-sand-50 px-7 py-3 text-sm hover:bg-accent-brick transition-colors">
           open directions in google maps
         </a>
       </div>
